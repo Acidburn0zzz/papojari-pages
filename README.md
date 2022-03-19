@@ -8,7 +8,7 @@ Generated using [Zola](https://www.getzola.org/)
   <a href="https://papojari.codeberg.page"><img src="https://forthebadge.com/images/badges/check-it-out.svg">
 </p>
 
-[Build input repository](https://codeberg.org/papojari/pages-zola)
+[Build input repository](https://codeberg.org/papojari/papojari.codeberg.page)
 
 ## [© License](LICENSE.md)
 
