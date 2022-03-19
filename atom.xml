@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>papojari</title>
+	<subtitle>placeholder description text for your blog!</subtitle>
+	<link href="https://papojari.codeberg.page/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://papojari.codeberg.page"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-03-19T21:45:13+01:00</updated>
+	<id>https://papojari.codeberg.page/atom.xml</id>
+	<entry xml:lang="en">
+		<title>License</title>
+		<published>2022-03-19T21:45:13+01:00</published>
+		<updated>2022-03-19T21:45:13+01:00</updated>
+		<link href="https://papojari.codeberg.page/license/" type="text/html"/>
+		<id>https://papojari.codeberg.page/license/</id>
+		<content type="html">&lt;p&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;codeberg.org&#x2F;papojari&#x2F;pages&quot;&gt;This website&lt;&#x2F;a&gt; is built from &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;codeberg.org&#x2F;papojari&#x2F;papojari.codeberg.page&quot;&gt;this repository&lt;&#x2F;a&gt;. Therefore for some file’s like SVGs or other images the license from the source repository carries over. Other files like HTML files for example have the license from the source repository and the license from the &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;codeberg.org&#x2F;papojari&#x2F;merm&#x2F;src&#x2F;branch&#x2F;main&#x2F;LICENSE.md&quot;&gt;theme repository&lt;&#x2F;a&gt;. It all depends on if the file was purely generated from the source repository or if the theme repository was used too.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Home Manager, the best solution to your dotfiles</title>
+		<published>2022-01-02T02:13:00+00:00</published>
+		<updated>2022-01-02T02:13:00+00:00</updated>
+		<link href="https://papojari.codeberg.page/blog/home-manager-the-best-solution-to-your-dotfiles/" type="text/html"/>
+		<id>https://papojari.codeberg.page/blog/home-manager-the-best-solution-to-your-dotfiles/</id>
+		<content type="html">&lt;h2 id=&quot;problems-with-other-dotfiles-managers&quot;&gt;Problems with other dotfiles managers&lt;a class=&quot;zola-anchor&quot; href=&quot;#problems-with-other-dotfiles-managers&quot; aria-label=&quot;Anchor link for: problems-with-other-dotfiles-managers&quot;&gt;§&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;You have your dotfiles hosted on GitHub or GitLab for example but have to add a license for a wallpaper from someone else. You have to update files from others manually. You have to manually install programs or run scripts to do so.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;solutions&quot;&gt;Solutions&lt;a class=&quot;zola-anchor&quot; href=&quot;#solutions&quot; aria-label=&quot;Anchor link for: solutions&quot;&gt;§&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;git&quot;&gt;Git&lt;a class=&quot;zola-anchor&quot; href=&quot;#git&quot; aria-label=&quot;Anchor link for: git&quot;&gt;§&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;If you use Git to manage your dotfiles then it may be viable to add another Git repository as a git submodule. (&lt;code&gt;git submodule add&lt;&#x2F;code&gt;) A Git submodule is a git repository inside a git repository and can therefore be easily updated. Since the Git submodule’s files are only put your Git repo when your repo is cloned you bypass having to add a license.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;home-manager&quot;&gt;Home Manager&lt;a class=&quot;zola-anchor&quot; href=&quot;#home-manager&quot; aria-label=&quot;Anchor link for: home-manager&quot;&gt;§&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;However, if you only want a single file from somewhere or the files are not in a Git repository then I recommend using &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;nix-community&#x2F;home-manager&quot;&gt;Home Manager&lt;&#x2F;a&gt;, which uses the &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;nixos.wiki&#x2F;wiki&#x2F;Nix_Expression_Language&quot;&gt;The Nix Expression Language&lt;&#x2F;a&gt;, to manage your dotfiles. The Nix Expression Language has builtin functions download files when you &lt;strong&gt;rebuild&lt;&#x2F;strong&gt; your dotfiles. Here’s an example on how to use them with Home Manager:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;nix&quot; style=&quot;background-color:#191919;color:#ffffff;&quot; class=&quot;language-nix &quot;&gt;&lt;code class=&quot;language-nix&quot; data-lang=&quot;nix&quot;&gt;&lt;span style=&quot;font-style:italic;color:#8aa6c1;&quot;&gt;home&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#8aa6c1;&quot;&gt;file&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffd700;&quot;&gt;&amp;quot;.config&#x2F;neofetch&#x2F;image.svg&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#8aa6c1;&quot;&gt;source &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#670000;font-weight:bold;color:#cccccc;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cccccc;&quot;&gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#80d500;&quot;&gt;builtins&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#8aa6c1;&quot;&gt;fetchurl &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cccccc;&quot;&gt;{
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cccccc;&quot;&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#80d500;&quot;&gt;url &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffd700;&quot;&gt;https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;NixOS&#x2F;nixos-artwork&#x2F;master&#x2F;logo&#x2F;nix-snowflake.svg&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cccccc;&quot;&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cccccc;&quot;&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#80d500;&quot;&gt;sha256 &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffd700;&quot;&gt;&amp;quot;14mbpw8jv1w2c5wvfvj8clmjw0fi956bq5xf9s2q3my14far0as8&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cccccc;&quot;&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cccccc;&quot;&gt;}&lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#670000;font-weight:bold;color:#cccccc;&quot;&gt;;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cccccc;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This will check whether &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;NixOS&#x2F;nixos-artwork&#x2F;master&#x2F;logo&#x2F;nix-snowflake.svg&quot;&gt;https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;NixOS&#x2F;nixos-artwork&#x2F;master&#x2F;logo&#x2F;nix-snowflake.svg&lt;&#x2F;a&gt; still has that sha256 checksum (checking whether the file has changed or not) and then download it to &lt;code&gt;$HOME&#x2F;.config&#x2F;neofetch&#x2F;image.svg&lt;&#x2F;code&gt; if the checksum is the same. If not you will have to update it. That way the files won’t be uploaded into your git repo and therefore you won’t have to add their license. Same as for &lt;a href=&quot;https:&#x2F;&#x2F;papojari.codeberg.page&#x2F;blog&#x2F;home-manager-the-best-solution-to-your-dotfiles&#x2F;#git&quot;&gt;Git&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;What is &lt;strong&gt;rebuilding&lt;&#x2F;strong&gt; my dotfiles though? With Home Manager you place your dotfiles in one folder. Then when you do &lt;code&gt;home-manager switch&lt;&#x2F;code&gt; and your dotfiles will be placed in their corresponding locations in your home directory.&lt;&#x2F;p&gt;
+&lt;p&gt;You won’t have to rewrite all of your dotfiles. They can be imported in &lt;code&gt;.nix&lt;&#x2F;code&gt; files.&lt;&#x2F;p&gt;
+&lt;p&gt;Home Manager can also install programs for you when you rebuild. You define them in &lt;code&gt;.nix&lt;&#x2F;code&gt; files too.&lt;&#x2F;p&gt;
+&lt;p&gt;In conclusion, I find Home Manager to be a way better solution to you dotfiles than using &lt;code&gt;stow&lt;&#x2F;code&gt; for example.&lt;&#x2F;p&gt;
+&lt;p&gt;How to install and use home manager can be found &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;nix-community&#x2F;home-manager&quot;&gt;here&lt;&#x2F;a&gt;. To get a list of all the nix options for Home Manager visit &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;nix-community.github.io&#x2F;home-manager&#x2F;options.html&quot;&gt;this site&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;If you not only want to use Nix to manage your home directory but also your system &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;nixos.org&#x2F;&quot;&gt;NixOS&lt;&#x2F;a&gt; may be a fit for you.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>☢️ &quot;Nuclear power? No thanks!&quot; - Completely irrational</title>
+		<published>2021-12-17T17:57:13+00:00</published>
+		<updated>2021-12-17T17:57:13+00:00</updated>
+		<link href="https://papojari.codeberg.page/blog/nuclear-power-no-thanks-completely-irrational/" type="text/html"/>
+		<id>https://papojari.codeberg.page/blog/nuclear-power-no-thanks-completely-irrational/</id>
+		<content type="html">&lt;p&gt;2011 in Fukushima, Japan: The nuclear reactor explodes. Short after
+Germany decides to phase out nuclear reactors in their territory over
+the next years because of growing safety concerns from the general
+population. Was this the right choice or was the decision just driven by
+panic? What does Germany intend to replace nuclear power with?&lt;&#x2F;p&gt;
+&lt;p&gt;The decision was definitely driven by panic since it was made right
+after the nuclear accident. Our use of fossil fuels heats up earth. To
+stop and reverse this we need to electrify machines that currently need
+fossil fuels to run because electricity can be generated in a way that
+doesn&#x27;t heat up earth. Therefore we require more electricity additionally
+to the ever growing need for electricity by a growing population and
+people using more technology. You can use fossil fuels to generate
+electricity but we would be stuck at the same problem again. So we need
+to look to other power generation methods like renewables (solar, wind, hydro, geothermal). Even though nuclear power is kind of disliked it is a good
+contender too. Let me tell you why.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;ourworldindata.org&#x2F;grapher&#x2F;death-rates-from-energy-production-per-twh&quot;&gt;This
+statistic&lt;&#x2F;a&gt;
+by OurWorldInData&#x2F;energy with data from 2007 and 2016 suggests that
+while about 57.34 people die per terawatt-hour of coal (That is only
+coal. Not even mentioning the other fossil fuels.), only 0.07 people die
+per terawatt-hour of nuclear power. Therefore nuclear power is among the
+safest methods of generating power alongside renewables despite of the
+alleged dangers of nuclear power proposed by anti-nuclear-power
+activists. Additionally you can generate huge amounts of power with just
+a little radioactive material unlike with coal, where much more coal is
+needed to produce the same amount of power. This massive all day power
+generation would very much help the electricity grid when renewables
+can&#x27;t produce power because of current daytime or weather. It would
+alleviate the need for a good amount of batteries that would otherwise
+be needed in an electricity grid without coal, oil, gas and nuclear to
+make up for the deficiencies of renewables during night time or bad
+weather as mentioned before.&lt;&#x2F;p&gt;
+&lt;p&gt;You might say &amp;quot;But there have been two nuclear reactor accidents
+already that killed many people! “ Yes, that is correct. The statistics
+still say that other fossil fuels can be held accountable for many times
+more deaths. The accidents were also both very stupid accidents that
+could have been easily prevented. It was human error. Modern nuclear
+reactors can run all by themselves. Some people are even working on even
+safer nuclear reactor designs which would make an accident almost
+impossible.&lt;&#x2F;p&gt;
+&lt;p&gt;What about nuclear waste though? While the waste of coal power plants is
+just blasted into the atmosphere, the waste of nuclear reactors can be
+recycled or stored deep underground in many layers of radioactive
+protection. The problem here being that there is (as far as I know) no
+nuclear waste storage in the underground for long term storage over
+thousands of years &lt;strong&gt;yet&lt;&#x2F;strong&gt;. New reactor designs can decrease the amount
+of waste though or run completely on already existing waste.&lt;&#x2F;p&gt;
+&lt;p&gt;Fellow people against nuclear power, I hope I could turn your opinion
+around. In conclusion, nuclear power should be used alongside renewable
+energy sources to combat our reliance on fossil fuels.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;sources&quot;&gt;Sources&lt;a class=&quot;zola-anchor&quot; href=&quot;#sources&quot; aria-label=&quot;Anchor link for: sources&quot;&gt;§&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Nuclear_power_phase-out&quot;&gt;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Nuclear_power_phase-out&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=EhAemz1v7dQ&quot;&gt;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=EhAemz1v7dQ&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;ourworldindata.org&#x2F;grapher&#x2F;death-rates-from-energy-production-per-twh&quot;&gt;https:&#x2F;&#x2F;ourworldindata.org&#x2F;grapher&#x2F;death-rates-from-energy-production-per-twh&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Hexagonal prism wallpaper</title>
+		<published>2021-08-29T00:00:00+00:00</published>
+		<updated>2021-08-29T00:00:00+00:00</updated>
+		<link href="https://papojari.codeberg.page/art/hexagonal-prism-wallpaper/" type="text/html"/>
+		<id>https://papojari.codeberg.page/art/hexagonal-prism-wallpaper/</id>
+		<content type="html"></content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Recommendations</title>
+		<published>2021-08-17T21:40:00+02:00</published>
+		<updated>2022-03-19T18:22:24+01:00</updated>
+		<link href="https://papojari.codeberg.page/recommendations/" type="text/html"/>
+		<id>https://papojari.codeberg.page/recommendations/</id>
+		<content type="html">&lt;h2 id=&quot;websites&quot;&gt;Websites&lt;a class=&quot;zola-anchor&quot; href=&quot;#websites&quot; aria-label=&quot;Anchor link for: websites&quot;&gt;§&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;based.cooking&quot;&gt;based.cooking&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;operating-systems&quot;&gt;Operating systems&lt;a class=&quot;zola-anchor&quot; href=&quot;#operating-systems&quot; aria-label=&quot;Anchor link for: operating-systems&quot;&gt;§&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;nixos.org&#x2F;&quot;&gt;NixOS&lt;&#x2F;a&gt; with &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;codeberg.org&#x2F;papojari&#x2F;nixos-config&quot;&gt;my NixOS configuration&lt;&#x2F;a&gt; and &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;codeberg.org&#x2F;papojari&#x2F;home-manager-config&quot;&gt;my Home Manager configuration&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;archlinux.org&#x2F;&quot;&gt;Arch Linux&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;terminal-emulators&quot;&gt;Terminal emulators&lt;a class=&quot;zola-anchor&quot; href=&quot;#terminal-emulators&quot; aria-label=&quot;Anchor link for: terminal-emulators&quot;&gt;§&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;sw.kovidgoyal.net&#x2F;kitty&#x2F;&quot;&gt;kitty&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;xorg-window-managers-wayland-compositors&quot;&gt;Xorg window managers&#x2F;Wayland compositors&lt;a class=&quot;zola-anchor&quot; href=&quot;#xorg-window-managers-wayland-compositors&quot; aria-label=&quot;Anchor link for: xorg-window-managers-wayland-compositors&quot;&gt;§&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;swaywm&#x2F;sway&quot;&gt;sway&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;baskerville&#x2F;bspwm&quot;&gt;bspwm&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;dwm.suckless.org&#x2F;&quot;&gt;dwm&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Accounts</title>
+		<published>2021-08-17T21:30:00+02:00</published>
+		<updated>2022-03-19T20:53:24+01:00</updated>
+		<link href="https://papojari.codeberg.page/accounts/" type="text/html"/>
+		<id>https://papojari.codeberg.page/accounts/</id>
+		<content type="html">&lt;h2 id=&quot;identity-verification&quot;&gt;Identity verification&lt;a class=&quot;zola-anchor&quot; href=&quot;#identity-verification&quot; aria-label=&quot;Anchor link for: identity-verification&quot;&gt;§&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;keyoxide.org&#x2F;319A982F5F12013B730139FF5D98BEEC20C9695C&quot;&gt;
+	&lt;p class=&quot;badge&quot;&gt;
+		&lt;img src=&quot;https:&#x2F;&#x2F;keyoxide.org&#x2F;static&#x2F;img&#x2F;logo_circle.png&quot; alt=&quot;Keyoxide icon&quot;&#x2F;&gt;papojari
+	&lt;&#x2F;p&gt;
+&lt;&#x2F;a&gt;
+&lt;h2 id=&quot;git-hosting-sites&quot;&gt;git hosting sites&lt;a class=&quot;zola-anchor&quot; href=&quot;#git-hosting-sites&quot; aria-label=&quot;Anchor link for: git-hosting-sites&quot;&gt;§&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;Most of my repositories are on Codeberg.&lt;&#x2F;p&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;codeberg.org&#x2F;papojari&quot;&gt;
+	&lt;p class=&quot;badge&quot;&gt;
+		&lt;img class=&quot;white-when-dark&quot; src=&quot;..&#x2F;logos&#x2F;codeberg.svg&quot; alt=&quot;Codeberg icon&quot;&#x2F;&gt;papojari
+	&lt;&#x2F;p&gt;
+&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;papojari&quot;&gt;
+	&lt;p class=&quot;badge&quot;&gt;
+		&lt;img class=&quot;white-when-dark&quot; src=&quot;..&#x2F;fontawesome&#x2F;svgs&#x2F;brands&#x2F;github.svg&quot; alt=&quot;GitHub icon&quot;&#x2F;&gt;papojari
+	&lt;&#x2F;p&gt;
+&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;gitlab.com&#x2F;papojari&quot;&gt;
+	&lt;p class=&quot;badge&quot;&gt;
+		&lt;img style=&quot;filter: invert(50%) sepia(100%) saturate(250%) hue-rotate(350deg)
+		brightness(90%) contrast(200%);&quot; src=&quot;..&#x2F;fontawesome&#x2F;svgs&#x2F;brands&#x2F;gitlab.svg&quot; alt=&quot;GitLab icon&quot;&#x2F;&gt;papojari
+	&lt;&#x2F;p&gt;
+&lt;&#x2F;a&gt;
+&lt;h2 id=&quot;social-media&quot;&gt;Social media&lt;a class=&quot;zola-anchor&quot; href=&quot;#social-media&quot; aria-label=&quot;Anchor link for: social-media&quot;&gt;§&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;Sometimes I post memes or screenshots of my Sway configuration on Reddit.&lt;&#x2F;p&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;reddit.artemislena.eu&#x2F;u&#x2F;veggushroom&quot;&gt;
+	&lt;p class=&quot;badge&quot;&gt;
+		&lt;img style=&quot;filter: invert(50%) sepia(100%) saturate(250%) hue-rotate(315deg)
+		brightness(90%) contrast(600%);&quot; src=&quot;..&#x2F;fontawesome&#x2F;svgs&#x2F;brands&#x2F;reddit-alien.svg&quot; alt=&quot;Reddit icon&quot;&#x2F;&gt;veggushroom
+	&lt;&#x2F;p&gt;
+&lt;&#x2F;a&gt;
+&lt;h2 id=&quot;contact&quot;&gt;Contact&lt;a class=&quot;zola-anchor&quot; href=&quot;#contact&quot; aria-label=&quot;Anchor link for: contact&quot;&gt;§&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;report-issues-with-this-website&quot;&gt;Report issues with this website&lt;a class=&quot;zola-anchor&quot; href=&quot;#report-issues-with-this-website&quot; aria-label=&quot;Anchor link for: report-issues-with-this-website&quot;&gt;§&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;codeberg.org&#x2F;papojari&#x2F;papojari.codeberg.page&#x2F;issues&quot;&gt;
+	&lt;p class=&quot;badge&quot;&gt;
+		&lt;img class=&quot;white-when-dark&quot; src=&quot;..&#x2F;logos&#x2F;codeberg.svg&quot; alt=&quot;Codeberg icon&quot;&#x2F;&gt;Codeberg.org&#x2F;papojari.codeberg.page&#x2F;issues
+	&lt;&#x2F;p&gt;
+&lt;&#x2F;a&gt;
+&lt;h3 id=&quot;matrix&quot;&gt;matrix&lt;a class=&quot;zola-anchor&quot; href=&quot;#matrix&quot; aria-label=&quot;Anchor link for: matrix&quot;&gt;§&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;The best way to contact me is &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;matrix.org&#x2F;&quot;&gt;matrix&lt;&#x2F;a&gt;. Your messages will only be able to be read by me.&lt;&#x2F;p&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;@papojari:artemislena.eu&quot;&gt;
+	&lt;p class=&quot;badge&quot;&gt;
+		&lt;img class=&quot;white-when-dark&quot; src=&quot;..&#x2F;logos&#x2F;matrix.svg&quot; alt=&quot;Matrix icon&quot;&#x2F;&gt;@papojari:artemislena.eu
+	&lt;&#x2F;p&gt;
+&lt;&#x2F;a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you are new, do not register an account on the matrix.org server, instead, have a look at &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;techlore&#x2F;faq-bot&#x2F;blob&#x2F;6c257e35c9033de7222be16528f3ab39a466b56a&#x2F;faq.json#L10&quot;&gt;this list.&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;artemislena.eu&#x2F;contact.html&quot;&gt;https:&#x2F;&#x2F;artemislena.eu&#x2F;contact.html&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h3 id=&quot;email&quot;&gt;Email&lt;a class=&quot;zola-anchor&quot; href=&quot;#email&quot; aria-label=&quot;Anchor link for: email&quot;&gt;§&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;If you really don’t want to use &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;matrix.org&#x2F;&quot;&gt;matrix&lt;&#x2F;a&gt;, I can be reached via Email at&lt;&#x2F;p&gt;
+&lt;a href=&quot;mailto:papojari-git.ovoid@aleeas.com&quot;&gt;
+	&lt;p class=&quot;badge&quot;&gt;
+		&lt;img class=&quot;white-when-dark&quot; src=&quot;..&#x2F;fontawesome&#x2F;svgs&#x2F;regular&#x2F;envelope.svg&quot; alt=&quot;envelope icon&quot;&#x2F;&gt;papojari-git.ovoid@aleeas.com
+	&lt;&#x2F;p&gt;
+&lt;&#x2F;a&gt;
+&lt;p&gt;Our emails will be unencrypted meaning anyone that an email passes will be able to read it. If you want to send an encrypted Email, use my public key from &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;keyoxide.org&#x2F;319A982F5F12013B730139FF5D98BEEC20C9695C&quot;&gt;Keyoxide&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>🛏️ RG(host of le )B(edroom)</title>
+		<published>2021-08-08T00:00:00+00:00</published>
+		<updated>2021-08-08T00:00:00+00:00</updated>
+		<link href="https://papojari.codeberg.page/art/rg-host-of-le-b-edroom/" type="text/html"/>
+		<id>https://papojari.codeberg.page/art/rg-host-of-le-b-edroom/</id>
+		<content type="html">&lt;p&gt;Without the PBR materials from ambientCG this would not look half as good. They’re all licensed under CC0. With this piece I combined a bunch of stuff like modelling a PC and a whole bunch of other things with softbody and cloth simulations to make a nice room. I improved my compositing skills quite a bit too. All the work took several days though the time was probably greatly reduced by my &lt;em&gt;new&lt;&#x2F;em&gt; hardware like a better processor and graphics card.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Linux journey</title>
+		<published>2021-06-24T03:00:40+02:00</published>
+		<updated>2021-06-24T03:00:40+02:00</updated>
+		<link href="https://papojari.codeberg.page/linux-journey/" type="text/html"/>
+		<id>https://papojari.codeberg.page/linux-journey/</id>
+		<content type="html">&lt;p&gt;My personal timeline of Linux distributions that I’ve used.&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Date installed&lt;&#x2F;th&gt;&lt;th&gt;Distribution&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;≅2020&#x2F;05&lt;&#x2F;td&gt;&lt;td&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;pop.system76.com&#x2F;&quot;&gt;PopOS!&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;≅2020&#x2F;06&lt;&#x2F;td&gt;&lt;td&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;linuxmint.com&#x2F;&quot;&gt;Linux Mint&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;≅2020&#x2F;07&lt;&#x2F;td&gt;&lt;td&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;manjaro.org&#x2F;&quot;&gt;Manjaro&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;≅2020&#x2F;09&lt;&#x2F;td&gt;&lt;td&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;archlinux.org&#x2F;&quot;&gt;Arch Linux&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;2021&#x2F;04&#x2F;28&lt;&#x2F;td&gt;&lt;td&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;bedrocklinux.org&#x2F;&quot;&gt;Bedrock Linux&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;≅2021&#x2F;05&lt;&#x2F;td&gt;&lt;td&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;archlinux.org&#x2F;&quot;&gt;Arch Linux&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;2021&#x2F;05&#x2F;24&lt;&#x2F;td&gt;&lt;td&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;nixos.org&#x2F;&quot;&gt;NixOS&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>🏦 Finance is weird</title>
+		<published>2021-06-24T00:08:25+00:00</published>
+		<updated>2021-06-24T00:08:25+00:00</updated>
+		<link href="https://papojari.codeberg.page/blog/finance-is-weird/" type="text/html"/>
+		<id>https://papojari.codeberg.page/blog/finance-is-weird/</id>
+		<content type="html">&lt;h2 id=&quot;credit-cards&quot;&gt;Credit cards&lt;a class=&quot;zola-anchor&quot; href=&quot;#credit-cards&quot; aria-label=&quot;Anchor link for: credit-cards&quot;&gt;§&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;One thing I don’t get is credit cards. Like why would I borrow money from a bank if I have money myself? Even if I don’t have money I could just get a regular credit. Maybe because banks are giving neat premiums to credit card people? That’s pretty evil. They’re locking you into spending money you don’t have.&lt;&#x2F;p&gt;
+&lt;p&gt;Also, (&lt;em&gt;I’m kind of conflicted on this one&lt;&#x2F;em&gt;) how is interest on credit allowed? It’s like letting a bank owe you money you didn’t take from them. Someone said to me that interest on credit exists because&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Who pays the guy for his time ?&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;Another reason for interest would be a higher incentive to pay back I guess.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;visa-mastercard-and-why-cryptocurrencies-are-superior&quot;&gt;VISA, Mastercard, … and why cryptocurrencies are superior&lt;a class=&quot;zola-anchor&quot; href=&quot;#visa-mastercard-and-why-cryptocurrencies-are-superior&quot; aria-label=&quot;Anchor link for: visa-mastercard-and-why-cryptocurrencies-are-superior&quot;&gt;§&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;Why would you trust these companies with processing your payments? What if their services are offline? They don’t open source their server software because anyone could just copy them I guess. But how do you know what is running on the servers? It is like a black box. I’d much rather like to pay with a hardware or software crypto wallet. If I choose the right &lt;strong&gt;stable&lt;&#x2F;strong&gt; cryptocurrency I can be anonymous and sure that no single entity has control over all of the world’s finance because cryptocurrencies are mostly decentralized, meaning the computers processing payments aren’t in a single location owned by a single entity. With crypto I also know that for cryptocurrencies to be decentralized their code has to be free so anyone can run a server.&lt;&#x2F;p&gt;
+&lt;p&gt;Unfortunately cryptocurrencies are kind of a bandaid at the moment because you need websites like BlockFi or Coinbase to exchange USD for example into a cryptocurrency.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>NixOS 3d showcase</title>
+		<published>2021-06-05T00:00:00+00:00</published>
+		<updated>2021-06-05T00:00:00+00:00</updated>
+		<link href="https://papojari.codeberg.page/art/nixos-3d-showcase/" type="text/html"/>
+		<id>https://papojari.codeberg.page/art/nixos-3d-showcase/</id>
+		<content type="html">&lt;p&gt;I created this piece as a background for my desktop. It tries to showcase what &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;nixos.org&quot;&gt;NixOS&lt;&#x2F;a&gt; is about.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>📡 Rover</title>
+		<published>2021-04-24T00:00:00+00:00</published>
+		<updated>2021-04-24T00:00:00+00:00</updated>
+		<link href="https://papojari.codeberg.page/art/rover/" type="text/html"/>
+		<id>https://papojari.codeberg.page/art/rover/</id>
+		<content type="html">&lt;p&gt;This rover is supposed to be self-sufficient. It captures energy through it’s solar panels communicates with it’s satellite dish and takes footage with it’s too cameras&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>🚗 Honda Sports EV</title>
+		<published>2021-02-09T00:00:00+00:00</published>
+		<updated>2021-02-09T00:00:00+00:00</updated>
+		<link href="https://papojari.codeberg.page/art/honda-sports-ev/" type="text/html"/>
+		<id>https://papojari.codeberg.page/art/honda-sports-ev/</id>
+		<content type="html">&lt;p&gt;I modelled this car off the Honda Sports EV Concept from 2018.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>🧔 Viking</title>
+		<published>2021-02-09T00:00:00+00:00</published>
+		<updated>2021-02-09T00:00:00+00:00</updated>
+		<link href="https://papojari.codeberg.page/art/viking/" type="text/html"/>
+		<id>https://papojari.codeberg.page/art/viking/</id>
+		<content type="html">&lt;p&gt;This is a Fanart of mine from the game &lt;em&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.scrapmechanic.com&#x2F;&quot;&gt;Scrap mechanic&lt;&#x2F;a&gt;&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>🔫 AK47</title>
+		<published>2021-01-03T00:00:00+00:00</published>
+		<updated>2021-01-03T00:00:00+00:00</updated>
+		<link href="https://papojari.codeberg.page/art/ak47/" type="text/html"/>
+		<id>https://papojari.codeberg.page/art/ak47/</id>
+		<content type="html"></content>
+	</entry>
+	<entry xml:lang="en">
+		<title>🤖 Totebot</title>
+		<published>2020-06-16T00:00:00+00:00</published>
+		<updated>2020-06-16T00:00:00+00:00</updated>
+		<link href="https://papojari.codeberg.page/art/totebot/" type="text/html"/>
+		<id>https://papojari.codeberg.page/art/totebot/</id>
+		<content type="html">&lt;p&gt;This is a Fanart of mine from the game &lt;em&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.scrapmechanic.com&#x2F;&quot;&gt;Scrap mechanic&lt;&#x2F;a&gt;&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>👨🏾 Obama Prism</title>
+		<published>2020-05-26T00:00:00+00:00</published>
+		<updated>2020-05-26T00:00:00+00:00</updated>
+		<link href="https://papojari.codeberg.page/art/obama-prism/" type="text/html"/>
+		<id>https://papojari.codeberg.page/art/obama-prism/</id>
+		<content type="html">&lt;p&gt;Yes, this is a meme.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>🏙️ City block</title>
+		<published>2020-05-22T00:00:00+00:00</published>
+		<updated>2020-05-22T00:00:00+00:00</updated>
+		<link href="https://papojari.codeberg.page/art/city-block/" type="text/html"/>
+		<id>https://papojari.codeberg.page/art/city-block/</id>
+		<content type="html">&lt;p&gt;This was modelled with inspiration from &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=ewKwYsQjBdQ&quot;&gt;Imphenzia&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

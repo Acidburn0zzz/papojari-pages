@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>papojari - satellite-dish</title>
+	<subtitle>placeholder description text for your blog!</subtitle>
+	<link href="https://papojari.codeberg.page/tags/satellite-dish/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://papojari.codeberg.page"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2021-04-24T00:00:00+00:00</updated>
+	<id>https://papojari.codeberg.page/tags/satellite-dish/atom.xml</id>
+	<entry xml:lang="en">
+		<title>📡 Rover</title>
+		<published>2021-04-24T00:00:00+00:00</published>
+		<updated>2021-04-24T00:00:00+00:00</updated>
+		<link href="https://papojari.codeberg.page/art/rover/" type="text/html"/>
+		<id>https://papojari.codeberg.page/art/rover/</id>
+		<content type="html">&lt;p&gt;This rover is supposed to be self-sufficient. It captures energy through it’s solar panels communicates with it’s satellite dish and takes footage with it’s too cameras&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

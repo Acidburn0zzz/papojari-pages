@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>papojari - Nix</title>
+	<subtitle>placeholder description text for your blog!</subtitle>
+	<link href="https://papojari.codeberg.page/tags/nix/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://papojari.codeberg.page"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-01-02T02:13:00+00:00</updated>
+	<id>https://papojari.codeberg.page/tags/nix/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Home Manager, the best solution to your dotfiles</title>
+		<published>2022-01-02T02:13:00+00:00</published>
+		<updated>2022-01-02T02:13:00+00:00</updated>
+		<link href="https://papojari.codeberg.page/blog/home-manager-the-best-solution-to-your-dotfiles/" type="text/html"/>
+		<id>https://papojari.codeberg.page/blog/home-manager-the-best-solution-to-your-dotfiles/</id>
+		<content type="html">&lt;h2 id=&quot;problems-with-other-dotfiles-managers&quot;&gt;Problems with other dotfiles managers&lt;a class=&quot;zola-anchor&quot; href=&quot;#problems-with-other-dotfiles-managers&quot; aria-label=&quot;Anchor link for: problems-with-other-dotfiles-managers&quot;&gt;§&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;You have your dotfiles hosted on GitHub or GitLab for example but have to add a license for a wallpaper from someone else. You have to update files from others manually. You have to manually install programs or run scripts to do so.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;solutions&quot;&gt;Solutions&lt;a class=&quot;zola-anchor&quot; href=&quot;#solutions&quot; aria-label=&quot;Anchor link for: solutions&quot;&gt;§&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;git&quot;&gt;Git&lt;a class=&quot;zola-anchor&quot; href=&quot;#git&quot; aria-label=&quot;Anchor link for: git&quot;&gt;§&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;If you use Git to manage your dotfiles then it may be viable to add another Git repository as a git submodule. (&lt;code&gt;git submodule add&lt;&#x2F;code&gt;) A Git submodule is a git repository inside a git repository and can therefore be easily updated. Since the Git submodule’s files are only put your Git repo when your repo is cloned you bypass having to add a license.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;home-manager&quot;&gt;Home Manager&lt;a class=&quot;zola-anchor&quot; href=&quot;#home-manager&quot; aria-label=&quot;Anchor link for: home-manager&quot;&gt;§&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;However, if you only want a single file from somewhere or the files are not in a Git repository then I recommend using &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;nix-community&#x2F;home-manager&quot;&gt;Home Manager&lt;&#x2F;a&gt;, which uses the &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;nixos.wiki&#x2F;wiki&#x2F;Nix_Expression_Language&quot;&gt;The Nix Expression Language&lt;&#x2F;a&gt;, to manage your dotfiles. The Nix Expression Language has builtin functions download files when you &lt;strong&gt;rebuild&lt;&#x2F;strong&gt; your dotfiles. Here’s an example on how to use them with Home Manager:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;nix&quot; style=&quot;background-color:#191919;color:#ffffff;&quot; class=&quot;language-nix &quot;&gt;&lt;code class=&quot;language-nix&quot; data-lang=&quot;nix&quot;&gt;&lt;span style=&quot;font-style:italic;color:#8aa6c1;&quot;&gt;home&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#8aa6c1;&quot;&gt;file&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffd700;&quot;&gt;&amp;quot;.config&#x2F;neofetch&#x2F;image.svg&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#8aa6c1;&quot;&gt;source &lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#670000;font-weight:bold;color:#cccccc;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cccccc;&quot;&gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#80d500;&quot;&gt;builtins&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#8aa6c1;&quot;&gt;fetchurl &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cccccc;&quot;&gt;{
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cccccc;&quot;&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#80d500;&quot;&gt;url &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffd700;&quot;&gt;https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;NixOS&#x2F;nixos-artwork&#x2F;master&#x2F;logo&#x2F;nix-snowflake.svg&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cccccc;&quot;&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cccccc;&quot;&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#80d500;&quot;&gt;sha256 &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffd700;&quot;&gt;&amp;quot;14mbpw8jv1w2c5wvfvj8clmjw0fi956bq5xf9s2q3my14far0as8&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cccccc;&quot;&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cccccc;&quot;&gt;}&lt;&#x2F;span&gt;&lt;span style=&quot;background-color:#670000;font-weight:bold;color:#cccccc;&quot;&gt;;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cccccc;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This will check whether &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;NixOS&#x2F;nixos-artwork&#x2F;master&#x2F;logo&#x2F;nix-snowflake.svg&quot;&gt;https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;NixOS&#x2F;nixos-artwork&#x2F;master&#x2F;logo&#x2F;nix-snowflake.svg&lt;&#x2F;a&gt; still has that sha256 checksum (checking whether the file has changed or not) and then download it to &lt;code&gt;$HOME&#x2F;.config&#x2F;neofetch&#x2F;image.svg&lt;&#x2F;code&gt; if the checksum is the same. If not you will have to update it. That way the files won’t be uploaded into your git repo and therefore you won’t have to add their license. Same as for &lt;a href=&quot;https:&#x2F;&#x2F;papojari.codeberg.page&#x2F;blog&#x2F;home-manager-the-best-solution-to-your-dotfiles&#x2F;#git&quot;&gt;Git&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;What is &lt;strong&gt;rebuilding&lt;&#x2F;strong&gt; my dotfiles though? With Home Manager you place your dotfiles in one folder. Then when you do &lt;code&gt;home-manager switch&lt;&#x2F;code&gt; and your dotfiles will be placed in their corresponding locations in your home directory.&lt;&#x2F;p&gt;
+&lt;p&gt;You won’t have to rewrite all of your dotfiles. They can be imported in &lt;code&gt;.nix&lt;&#x2F;code&gt; files.&lt;&#x2F;p&gt;
+&lt;p&gt;Home Manager can also install programs for you when you rebuild. You define them in &lt;code&gt;.nix&lt;&#x2F;code&gt; files too.&lt;&#x2F;p&gt;
+&lt;p&gt;In conclusion, I find Home Manager to be a way better solution to you dotfiles than using &lt;code&gt;stow&lt;&#x2F;code&gt; for example.&lt;&#x2F;p&gt;
+&lt;p&gt;How to install and use home manager can be found &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;nix-community&#x2F;home-manager&quot;&gt;here&lt;&#x2F;a&gt;. To get a list of all the nix options for Home Manager visit &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;nix-community.github.io&#x2F;home-manager&#x2F;options.html&quot;&gt;this site&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;If you not only want to use Nix to manage your home directory but also your system &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;nixos.org&#x2F;&quot;&gt;NixOS&lt;&#x2F;a&gt; may be a fit for you.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>NixOS 3d showcase</title>
+		<published>2021-06-05T00:00:00+00:00</published>
+		<updated>2021-06-05T00:00:00+00:00</updated>
+		<link href="https://papojari.codeberg.page/art/nixos-3d-showcase/" type="text/html"/>
+		<id>https://papojari.codeberg.page/art/nixos-3d-showcase/</id>
+		<content type="html">&lt;p&gt;I created this piece as a background for my desktop. It tries to showcase what &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;nixos.org&quot;&gt;NixOS&lt;&#x2F;a&gt; is about.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

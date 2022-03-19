@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>papojari - drawing</title>
+	<subtitle>placeholder description text for your blog!</subtitle>
+	<link href="https://papojari.codeberg.page/categories/drawing/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://papojari.codeberg.page"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2020-06-16T00:00:00+00:00</updated>
+	<id>https://papojari.codeberg.page/categories/drawing/atom.xml</id>
+	<entry xml:lang="en">
+		<title>🤖 Totebot</title>
+		<published>2020-06-16T00:00:00+00:00</published>
+		<updated>2020-06-16T00:00:00+00:00</updated>
+		<link href="https://papojari.codeberg.page/art/totebot/" type="text/html"/>
+		<id>https://papojari.codeberg.page/art/totebot/</id>
+		<content type="html">&lt;p&gt;This is a Fanart of mine from the game &lt;em&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.scrapmechanic.com&#x2F;&quot;&gt;Scrap mechanic&lt;&#x2F;a&gt;&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

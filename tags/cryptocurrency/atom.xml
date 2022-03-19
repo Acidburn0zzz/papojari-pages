@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>papojari - cryptocurrency</title>
+	<subtitle>placeholder description text for your blog!</subtitle>
+	<link href="https://papojari.codeberg.page/tags/cryptocurrency/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://papojari.codeberg.page"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2021-06-24T00:08:25+00:00</updated>
+	<id>https://papojari.codeberg.page/tags/cryptocurrency/atom.xml</id>
+	<entry xml:lang="en">
+		<title>🏦 Finance is weird</title>
+		<published>2021-06-24T00:08:25+00:00</published>
+		<updated>2021-06-24T00:08:25+00:00</updated>
+		<link href="https://papojari.codeberg.page/blog/finance-is-weird/" type="text/html"/>
+		<id>https://papojari.codeberg.page/blog/finance-is-weird/</id>
+		<content type="html">&lt;h2 id=&quot;credit-cards&quot;&gt;Credit cards&lt;a class=&quot;zola-anchor&quot; href=&quot;#credit-cards&quot; aria-label=&quot;Anchor link for: credit-cards&quot;&gt;§&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;One thing I don’t get is credit cards. Like why would I borrow money from a bank if I have money myself? Even if I don’t have money I could just get a regular credit. Maybe because banks are giving neat premiums to credit card people? That’s pretty evil. They’re locking you into spending money you don’t have.&lt;&#x2F;p&gt;
+&lt;p&gt;Also, (&lt;em&gt;I’m kind of conflicted on this one&lt;&#x2F;em&gt;) how is interest on credit allowed? It’s like letting a bank owe you money you didn’t take from them. Someone said to me that interest on credit exists because&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Who pays the guy for his time ?&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;Another reason for interest would be a higher incentive to pay back I guess.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;visa-mastercard-and-why-cryptocurrencies-are-superior&quot;&gt;VISA, Mastercard, … and why cryptocurrencies are superior&lt;a class=&quot;zola-anchor&quot; href=&quot;#visa-mastercard-and-why-cryptocurrencies-are-superior&quot; aria-label=&quot;Anchor link for: visa-mastercard-and-why-cryptocurrencies-are-superior&quot;&gt;§&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;Why would you trust these companies with processing your payments? What if their services are offline? They don’t open source their server software because anyone could just copy them I guess. But how do you know what is running on the servers? It is like a black box. I’d much rather like to pay with a hardware or software crypto wallet. If I choose the right &lt;strong&gt;stable&lt;&#x2F;strong&gt; cryptocurrency I can be anonymous and sure that no single entity has control over all of the world’s finance because cryptocurrencies are mostly decentralized, meaning the computers processing payments aren’t in a single location owned by a single entity. With crypto I also know that for cryptocurrencies to be decentralized their code has to be free so anyone can run a server.&lt;&#x2F;p&gt;
+&lt;p&gt;Unfortunately cryptocurrencies are kind of a bandaid at the moment because you need websites like BlockFi or Coinbase to exchange USD for example into a cryptocurrency.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

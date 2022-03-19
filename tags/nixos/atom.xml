@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>papojari - NixOS</title>
+	<subtitle>placeholder description text for your blog!</subtitle>
+	<link href="https://papojari.codeberg.page/tags/nixos/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://papojari.codeberg.page"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2021-06-05T00:00:00+00:00</updated>
+	<id>https://papojari.codeberg.page/tags/nixos/atom.xml</id>
+	<entry xml:lang="en">
+		<title>NixOS 3d showcase</title>
+		<published>2021-06-05T00:00:00+00:00</published>
+		<updated>2021-06-05T00:00:00+00:00</updated>
+		<link href="https://papojari.codeberg.page/art/nixos-3d-showcase/" type="text/html"/>
+		<id>https://papojari.codeberg.page/art/nixos-3d-showcase/</id>
+		<content type="html">&lt;p&gt;I created this piece as a background for my desktop. It tries to showcase what &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;nixos.org&quot;&gt;NixOS&lt;&#x2F;a&gt; is about.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

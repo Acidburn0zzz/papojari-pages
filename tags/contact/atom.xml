@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>papojari - contact</title>
+	<subtitle>placeholder description text for your blog!</subtitle>
+	<link href="https://papojari.codeberg.page/tags/contact/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://papojari.codeberg.page"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-03-19T20:53:24+01:00</updated>
+	<id>https://papojari.codeberg.page/tags/contact/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Accounts</title>
+		<published>2021-08-17T21:30:00+02:00</published>
+		<updated>2022-03-19T20:53:24+01:00</updated>
+		<link href="https://papojari.codeberg.page/accounts/" type="text/html"/>
+		<id>https://papojari.codeberg.page/accounts/</id>
+		<content type="html">&lt;h2 id=&quot;identity-verification&quot;&gt;Identity verification&lt;a class=&quot;zola-anchor&quot; href=&quot;#identity-verification&quot; aria-label=&quot;Anchor link for: identity-verification&quot;&gt;§&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;keyoxide.org&#x2F;319A982F5F12013B730139FF5D98BEEC20C9695C&quot;&gt;
+	&lt;p class=&quot;badge&quot;&gt;
+		&lt;img src=&quot;https:&#x2F;&#x2F;keyoxide.org&#x2F;static&#x2F;img&#x2F;logo_circle.png&quot; alt=&quot;Keyoxide icon&quot;&#x2F;&gt;papojari
+	&lt;&#x2F;p&gt;
+&lt;&#x2F;a&gt;
+&lt;h2 id=&quot;git-hosting-sites&quot;&gt;git hosting sites&lt;a class=&quot;zola-anchor&quot; href=&quot;#git-hosting-sites&quot; aria-label=&quot;Anchor link for: git-hosting-sites&quot;&gt;§&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;Most of my repositories are on Codeberg.&lt;&#x2F;p&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;codeberg.org&#x2F;papojari&quot;&gt;
+	&lt;p class=&quot;badge&quot;&gt;
+		&lt;img class=&quot;white-when-dark&quot; src=&quot;..&#x2F;logos&#x2F;codeberg.svg&quot; alt=&quot;Codeberg icon&quot;&#x2F;&gt;papojari
+	&lt;&#x2F;p&gt;
+&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;papojari&quot;&gt;
+	&lt;p class=&quot;badge&quot;&gt;
+		&lt;img class=&quot;white-when-dark&quot; src=&quot;..&#x2F;fontawesome&#x2F;svgs&#x2F;brands&#x2F;github.svg&quot; alt=&quot;GitHub icon&quot;&#x2F;&gt;papojari
+	&lt;&#x2F;p&gt;
+&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;gitlab.com&#x2F;papojari&quot;&gt;
+	&lt;p class=&quot;badge&quot;&gt;
+		&lt;img style=&quot;filter: invert(50%) sepia(100%) saturate(250%) hue-rotate(350deg)
+		brightness(90%) contrast(200%);&quot; src=&quot;..&#x2F;fontawesome&#x2F;svgs&#x2F;brands&#x2F;gitlab.svg&quot; alt=&quot;GitLab icon&quot;&#x2F;&gt;papojari
+	&lt;&#x2F;p&gt;
+&lt;&#x2F;a&gt;
+&lt;h2 id=&quot;social-media&quot;&gt;Social media&lt;a class=&quot;zola-anchor&quot; href=&quot;#social-media&quot; aria-label=&quot;Anchor link for: social-media&quot;&gt;§&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;p&gt;Sometimes I post memes or screenshots of my Sway configuration on Reddit.&lt;&#x2F;p&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;reddit.artemislena.eu&#x2F;u&#x2F;veggushroom&quot;&gt;
+	&lt;p class=&quot;badge&quot;&gt;
+		&lt;img style=&quot;filter: invert(50%) sepia(100%) saturate(250%) hue-rotate(315deg)
+		brightness(90%) contrast(600%);&quot; src=&quot;..&#x2F;fontawesome&#x2F;svgs&#x2F;brands&#x2F;reddit-alien.svg&quot; alt=&quot;Reddit icon&quot;&#x2F;&gt;veggushroom
+	&lt;&#x2F;p&gt;
+&lt;&#x2F;a&gt;
+&lt;h2 id=&quot;contact&quot;&gt;Contact&lt;a class=&quot;zola-anchor&quot; href=&quot;#contact&quot; aria-label=&quot;Anchor link for: contact&quot;&gt;§&lt;&#x2F;a&gt;
+&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;report-issues-with-this-website&quot;&gt;Report issues with this website&lt;a class=&quot;zola-anchor&quot; href=&quot;#report-issues-with-this-website&quot; aria-label=&quot;Anchor link for: report-issues-with-this-website&quot;&gt;§&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;codeberg.org&#x2F;papojari&#x2F;papojari.codeberg.page&#x2F;issues&quot;&gt;
+	&lt;p class=&quot;badge&quot;&gt;
+		&lt;img class=&quot;white-when-dark&quot; src=&quot;..&#x2F;logos&#x2F;codeberg.svg&quot; alt=&quot;Codeberg icon&quot;&#x2F;&gt;Codeberg.org&#x2F;papojari.codeberg.page&#x2F;issues
+	&lt;&#x2F;p&gt;
+&lt;&#x2F;a&gt;
+&lt;h3 id=&quot;matrix&quot;&gt;matrix&lt;a class=&quot;zola-anchor&quot; href=&quot;#matrix&quot; aria-label=&quot;Anchor link for: matrix&quot;&gt;§&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;The best way to contact me is &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;matrix.org&#x2F;&quot;&gt;matrix&lt;&#x2F;a&gt;. Your messages will only be able to be read by me.&lt;&#x2F;p&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;@papojari:artemislena.eu&quot;&gt;
+	&lt;p class=&quot;badge&quot;&gt;
+		&lt;img class=&quot;white-when-dark&quot; src=&quot;..&#x2F;logos&#x2F;matrix.svg&quot; alt=&quot;Matrix icon&quot;&#x2F;&gt;@papojari:artemislena.eu
+	&lt;&#x2F;p&gt;
+&lt;&#x2F;a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you are new, do not register an account on the matrix.org server, instead, have a look at &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;techlore&#x2F;faq-bot&#x2F;blob&#x2F;6c257e35c9033de7222be16528f3ab39a466b56a&#x2F;faq.json#L10&quot;&gt;this list.&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;artemislena.eu&#x2F;contact.html&quot;&gt;https:&#x2F;&#x2F;artemislena.eu&#x2F;contact.html&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h3 id=&quot;email&quot;&gt;Email&lt;a class=&quot;zola-anchor&quot; href=&quot;#email&quot; aria-label=&quot;Anchor link for: email&quot;&gt;§&lt;&#x2F;a&gt;
+&lt;&#x2F;h3&gt;
+&lt;p&gt;If you really don’t want to use &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;matrix.org&#x2F;&quot;&gt;matrix&lt;&#x2F;a&gt;, I can be reached via Email at&lt;&#x2F;p&gt;
+&lt;a href=&quot;mailto:papojari-git.ovoid@aleeas.com&quot;&gt;
+	&lt;p class=&quot;badge&quot;&gt;
+		&lt;img class=&quot;white-when-dark&quot; src=&quot;..&#x2F;fontawesome&#x2F;svgs&#x2F;regular&#x2F;envelope.svg&quot; alt=&quot;envelope icon&quot;&#x2F;&gt;papojari-git.ovoid@aleeas.com
+	&lt;&#x2F;p&gt;
+&lt;&#x2F;a&gt;
+&lt;p&gt;Our emails will be unencrypted meaning anyone that an email passes will be able to read it. If you want to send an encrypted Email, use my public key from &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;keyoxide.org&#x2F;319A982F5F12013B730139FF5D98BEEC20C9695C&quot;&gt;Keyoxide&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

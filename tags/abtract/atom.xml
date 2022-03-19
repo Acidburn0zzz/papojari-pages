@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>papojari - abtract</title>
+	<subtitle>placeholder description text for your blog!</subtitle>
+	<link href="https://papojari.codeberg.page/tags/abtract/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://papojari.codeberg.page"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2021-01-03T00:00:00+00:00</updated>
+	<id>https://papojari.codeberg.page/tags/abtract/atom.xml</id>
+	<entry xml:lang="en">
+		<title>🔫 AK47</title>
+		<published>2021-01-03T00:00:00+00:00</published>
+		<updated>2021-01-03T00:00:00+00:00</updated>
+		<link href="https://papojari.codeberg.page/art/ak47/" type="text/html"/>
+		<id>https://papojari.codeberg.page/art/ak47/</id>
+		<content type="html"></content>
+	</entry>
+</feed>

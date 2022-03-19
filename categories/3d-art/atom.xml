@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>papojari - 3d-art</title>
+	<subtitle>placeholder description text for your blog!</subtitle>
+	<link href="https://papojari.codeberg.page/categories/3d-art/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://papojari.codeberg.page"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2021-08-29T00:00:00+00:00</updated>
+	<id>https://papojari.codeberg.page/categories/3d-art/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Hexagonal prism wallpaper</title>
+		<published>2021-08-29T00:00:00+00:00</published>
+		<updated>2021-08-29T00:00:00+00:00</updated>
+		<link href="https://papojari.codeberg.page/art/hexagonal-prism-wallpaper/" type="text/html"/>
+		<id>https://papojari.codeberg.page/art/hexagonal-prism-wallpaper/</id>
+		<content type="html"></content>
+	</entry>
+	<entry xml:lang="en">
+		<title>🛏️ RG(host of le )B(edroom)</title>
+		<published>2021-08-08T00:00:00+00:00</published>
+		<updated>2021-08-08T00:00:00+00:00</updated>
+		<link href="https://papojari.codeberg.page/art/rg-host-of-le-b-edroom/" type="text/html"/>
+		<id>https://papojari.codeberg.page/art/rg-host-of-le-b-edroom/</id>
+		<content type="html">&lt;p&gt;Without the PBR materials from ambientCG this would not look half as good. They’re all licensed under CC0. With this piece I combined a bunch of stuff like modelling a PC and a whole bunch of other things with softbody and cloth simulations to make a nice room. I improved my compositing skills quite a bit too. All the work took several days though the time was probably greatly reduced by my &lt;em&gt;new&lt;&#x2F;em&gt; hardware like a better processor and graphics card.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>NixOS 3d showcase</title>
+		<published>2021-06-05T00:00:00+00:00</published>
+		<updated>2021-06-05T00:00:00+00:00</updated>
+		<link href="https://papojari.codeberg.page/art/nixos-3d-showcase/" type="text/html"/>
+		<id>https://papojari.codeberg.page/art/nixos-3d-showcase/</id>
+		<content type="html">&lt;p&gt;I created this piece as a background for my desktop. It tries to showcase what &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;nixos.org&quot;&gt;NixOS&lt;&#x2F;a&gt; is about.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>📡 Rover</title>
+		<published>2021-04-24T00:00:00+00:00</published>
+		<updated>2021-04-24T00:00:00+00:00</updated>
+		<link href="https://papojari.codeberg.page/art/rover/" type="text/html"/>
+		<id>https://papojari.codeberg.page/art/rover/</id>
+		<content type="html">&lt;p&gt;This rover is supposed to be self-sufficient. It captures energy through it’s solar panels communicates with it’s satellite dish and takes footage with it’s too cameras&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>🚗 Honda Sports EV</title>
+		<published>2021-02-09T00:00:00+00:00</published>
+		<updated>2021-02-09T00:00:00+00:00</updated>
+		<link href="https://papojari.codeberg.page/art/honda-sports-ev/" type="text/html"/>
+		<id>https://papojari.codeberg.page/art/honda-sports-ev/</id>
+		<content type="html">&lt;p&gt;I modelled this car off the Honda Sports EV Concept from 2018.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>🧔 Viking</title>
+		<published>2021-02-09T00:00:00+00:00</published>
+		<updated>2021-02-09T00:00:00+00:00</updated>
+		<link href="https://papojari.codeberg.page/art/viking/" type="text/html"/>
+		<id>https://papojari.codeberg.page/art/viking/</id>
+		<content type="html">&lt;p&gt;This is a Fanart of mine from the game &lt;em&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.scrapmechanic.com&#x2F;&quot;&gt;Scrap mechanic&lt;&#x2F;a&gt;&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>🔫 AK47</title>
+		<published>2021-01-03T00:00:00+00:00</published>
+		<updated>2021-01-03T00:00:00+00:00</updated>
+		<link href="https://papojari.codeberg.page/art/ak47/" type="text/html"/>
+		<id>https://papojari.codeberg.page/art/ak47/</id>
+		<content type="html"></content>
+	</entry>
+	<entry xml:lang="en">
+		<title>👨🏾 Obama Prism</title>
+		<published>2020-05-26T00:00:00+00:00</published>
+		<updated>2020-05-26T00:00:00+00:00</updated>
+		<link href="https://papojari.codeberg.page/art/obama-prism/" type="text/html"/>
+		<id>https://papojari.codeberg.page/art/obama-prism/</id>
+		<content type="html">&lt;p&gt;Yes, this is a meme.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>🏙️ City block</title>
+		<published>2020-05-22T00:00:00+00:00</published>
+		<updated>2020-05-22T00:00:00+00:00</updated>
+		<link href="https://papojari.codeberg.page/art/city-block/" type="text/html"/>
+		<id>https://papojari.codeberg.page/art/city-block/</id>
+		<content type="html">&lt;p&gt;This was modelled with inspiration from &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=ewKwYsQjBdQ&quot;&gt;Imphenzia&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>
